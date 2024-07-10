@@ -6,7 +6,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ../data:/data
+      - /usr/local/var/spool/zeek:/data
       - ./grafana-storage:/var/lib/grafana
       - ./datasources:/etc/grafana/provisioning/datasources
       - ./dashboards:/etc/grafana/provisioning/dashboards
